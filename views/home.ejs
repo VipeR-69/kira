@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>KIRAFLIX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-900 h-screen">
+
+    <section>
+        <nav class="bg-zinc-950 p-6 flex justify-around items-center">
+            <a class="text-red-700 font-bold text-4xl" href="/home">KIRAFLIX</a>
+            
+            <ul class="flex space-x-7 text-gray-300 font-medium">
+                <li><a class="hover:text-stone-400" href="#">Home</a></li>
+                <li><a class="hover:text-stone-400" href="#">Movies</a></li>
+                <li><a class="hover:text-stone-400" href="#">TV Shows</a></li>
+                <li><a class="hover:text-stone-400" href="#">New</a></li>
+                <li><a class="hover:text-stone-400" href="#">Genre</a></li>
+            </ul>
+
+            <form class="flex items-center">
+                <input class="w-60 p-3 text-sm font-normal text-gray-300 bg-transparent border border-gray-500 rounded-lg focus:border-gray-700 outline-none" type="text" placeholder="Search Movies & TV Shows">
+                <button class="pl-3 text-xl cursor-pointer">🔍</button>
+            </form>
+
+            <div class="relative ml-5">
+                <button onclick="toggleDropdown()" class="flex items-center space-x-2 text-gray-300 cursor-pointer">
+                    <img src="https://img.icons8.com/?size=100&id=H101gtpJBVoh&format=png&color=FFFFFF" class="w-10 h-10 rounded-full" alt="Profile">
+                    <span class="font-medium hidden md:inline hover:text-stone-400">My Profile</span>
+                </button>
+                
+                <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-40 bg-zinc-700 rounded-lg shadow-lg overflow-hidden">
+                    <a href="/profile" class="block px-4 py-2 bg-zinc-700 text-white hover:bg-blue-500">View Profile</a>
+                    <a href="/logout" class="block px-4 py-2 bg-zinc-700 text-white hover:bg-red-500">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="h-80">
+        <div class="m-20">
+            <h1 class="text-6xl text-white font-bold opacity-75">TRENDING</h1>
+            <div class="mt-7" name="conatainer">
+                <div class="flex justify-start items-center flex-row space-x-4 " name="slider">
+                    <a href="https://youtu.be/AZGcmvrTX9M?si=wirmhZZydu8cvcv6"><img class="w-45 h-70 cursor-pointer " src="https://m.media-amazon.com/images/I/71OHH9HaB5S.jpg" alt="Tenet"></a>
+                    <a href="https://youtu.be/gCcx85zbxz4?si=jx6N3NcItpMM0N8r"><img class="w-45 h-70 cursor-pointer" src="https://rukminim2.flixcart.com/image/850/1000/jf8khow0/poster/a/u/h/small-hollywood-movie-poster-blade-runner-2049-ridley-scott-original-imaf3qvx88xenydd.jpeg?q=90&crop=false"></a>
+                    <a href="https://youtu.be/6ZfuNTqbHE8?si=y94PBSYW1a0DqsVf"><img class="w-45 h-70 cursor-pointer " src="https://images-cdn.ubuy.co.in/668f03f763dc6918441092c0-avengers-infinity-war-movie-poster.jpg"></a>
+                    <a href="https://youtu.be/b9EkMc79ZSU?si=GaGAjHhhlOIYPd7-"><img class="w-45 h-70 cursor-pointer " src="https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw=="></a>
+                    <a href="https://youtu.be/bjqEWgDVPe0?si=wHZ-ftqc8ugtin0J"><img class="w-45 h-70 cursor-pointer " src="https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"></a>
+                    <a href="https://youtu.be/Ed1sGgHUo88?si=VonY7TxBYT7pJDpP"><img class="w-45 h-70 cursor-pointer " src="https://images.ctfassets.net/4cd45et68cgf/6xlqqImDdAfzWKIlaScQxm/7def051f35d6668bd6e6227e354ecc01/EN-US_SG-S2_Primary_Main_RoundandRound-Safe_Vertical_27x40_RGB_PRE.jpg?w=1200"></a>
+                    <a href="https://youtu.be/UaVTIH8mujA?si=ExScQpRIIgCIYXfp"><img class="w-45 h-70 cursor-pointer " src="https://i.ebayimg.com/images/g/aD0AAOSwE~Vj8lLI/s-l1200.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-80">
+        <div class="m-20 mt-30">
+            <h1 class="text-6xl text-white font-bold opacity-75">MOVIES</h1>
+            <div class="mt-7" name="conatainer">
+                <div class="flex justify-start items-center flex-row space-x-4" name="slider">
+                    <a href="https://youtu.be/AZGcmvrTX9M?si=wirmhZZydu8cvcv6"><img class="w-45 h-70 cursor-pointer " src="https://m.media-amazon.com/images/I/71OHH9HaB5S.jpg"></a>
+                    <a href="https://youtu.be/gCcx85zbxz4?si=jx6N3NcItpMM0N8r"><img class="w-45 h-70 cursor-pointer" src="https://rukminim2.flixcart.com/image/850/1000/jf8khow0/poster/a/u/h/small-hollywood-movie-poster-blade-runner-2049-ridley-scott-original-imaf3qvx88xenydd.jpeg?q=90&crop=false"></a>
+                    <a href="https://youtu.be/zSWdZVtXT7E?si=So6xuX0C1BKRnLSD"><img class="w-45 h-70 cursor-pointer " src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10543523_p_v8_as.jpg"></a>
+                    <a href="https://youtu.be/LNlrGhBpYjc?si=5Y8QcUqNfZ6_tMI_"><img class="w-45 h-70 cursor-pointer " src="https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/236765/TS_BATHROOM_OS_EN_US_Sept20.jpg"></a>
+                    <a href="https://youtu.be/0fUCuvNlOCg?si=6WuSIBoD_19hr5WX"><img class="w-45 h-70 cursor-pointer " src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2015%2F06%2Fhollywood-movie-posters-redesigned-1.jpg?q=75&w=800&cbr=1&fit=max"></a>
+                    <a href="https://youtu.be/n9xhJrPXop4?si=_DHstXN_lP1g9CAv"><img class="w-45 h-70 cursor-pointer " src="https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg"></a>
+                    <a href="https://youtu.be/UaVTIH8mujA?si=ExScQpRIIgCIYXfp"><img class="w-45 h-70 cursor-pointer " src="https://i.ebayimg.com/images/g/aD0AAOSwE~Vj8lLI/s-l1200.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-60">
+        <div class="m-20 mt-30">
+            <h1 class="text-6xl text-white font-bold opacity-75">TV SHOWS</h1>
+            <div class="mt-7" name="conatainer">
+                <div class="flex justify-start items-center flex-row space-x-4" name="slider">
+                    <a href="https://youtu.be/bjqEWgDVPe0?si=wHZ-ftqc8ugtin0J"><img class="w-45 h-70 cursor-pointer " src="https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"></a>
+                    <a href="https://youtu.be/Ed1sGgHUo88?si=VonY7TxBYT7pJDpP"><img class="w-45 h-70 cursor-pointer " src="https://images.ctfassets.net/4cd45et68cgf/6xlqqImDdAfzWKIlaScQxm/7def051f35d6668bd6e6227e354ecc01/EN-US_SG-S2_Primary_Main_RoundandRound-Safe_Vertical_27x40_RGB_PRE.jpg?w=1200"></a>
+                    <a href="https://youtu.be/b9EkMc79ZSU?si=GaGAjHhhlOIYPd7-"><img class="w-45 h-70 cursor-pointer " src="https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw=="></a>
+                    <a href="https://youtu.be/_InqQJRqGW4?si=5mJ3EEkx0ZoT9bh4"><img class="w-45 h-70 cursor-pointer " src="https://m.media-amazon.com/images/M/MV5BZjkxZWJiNTUtYjQwYS00MTBlLTgwODQtM2FkNWMyMjMwOGZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"></a>
+                    <a href="https://youtu.be/Zg2LCD5QOJs?si=DPWXgpUVLrFzxUwX"><img class="w-45 h-70 cursor-pointer " src="https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_.jpg"></a>
+                    <a href="https://youtu.be/HhesaQXLuRY?si=cl0cXgP56fK_ilLO"><img class="w-45 h-70 cursor-pointer " src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"></a>
+                    <a href="https://youtu.be/rrwycJ08PSA?si=0G-EbzCRom3romz-"><img class="w-45 h-70 cursor-pointer " src="https://resizing.flixster.com/lpJkDxnEFNQT1OWJjnmYfvpAHJ0=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvUlRUVjI2NjgyOS53ZWJw"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-50 bg-zinc-950 text-white text-center py-7 opacity-60">
+        <p>&copy; 2025 Kiraflix. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("dropdownMenu").classList.toggle("hidden");
+        }
+
+        document.addEventListener("click", function(event) {
+            if (!event.target.closest(".relative")) {
+                document.getElementById("dropdownMenu").classList.add("hidden");
+            }
+        });
+    </script>
+
+</body>
+</html>

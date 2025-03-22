@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Sign up | Kiraflix</title>
+</head>
+<body class="bg-zinc-900 h-screen">
+    <section>
+        <nav class="bg-zinc-950 h-23 flex justify-center items-center">
+            <ul class="w-max list-none">
+                <li class="text-red-700 font-bold text-4xl h-10"><a class="decoration-none" href="/">KIRAFLIX</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="flex justify-center items-center flex-col mt-12.5">
+        <div class="opacity-90 w-95 h-120 bg-zinc-950 flex justify-center items-center flex-col rounded-2xl">
+            <h1 class="text-4xl text-gray-200 font-bold">Sign up</h1>
+            <form class="flex justify-center items-center flex-col" action="/signup" method="POST">
+                <div>
+                    <input class="text-sm text-white h-5 w-55 border-gray-400 border-2 border-solid rounded-lg delay-50 mt-7 p-5 placeholder:font-medium" type="text" name="username" placeholder="Username" required>
+                </div>
+                <div>
+                    <input class="text-sm text-white h-5 w-55 border-gray-400 border-2 border-solid rounded-lg delay-50 mt-7 p-5 placeholder:font-medium" type="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input class="text-sm text-white h-5 w-55 border-gray-400 border-2 border-solid rounded-lg delay-50 mt-7 p-5 placeholder:font-medium" type="password" name="password" placeholder="Password" required>
+                </div>
+                <div>
+                    <input class="text-sm text-white h-5 w-55 border-gray-400 border-2 border-solid rounded-lg delay-50 mt-7 p-5 placeholder:font-medium" type="password" name="repeatPassword" placeholder="Repeat Password" required>
+                </div>
+
+                <button class="w-25 p-2 bg-red-700 border-red-700 border-2 text-white m-5 font-medium rounded-xl cursor-pointer delay-50 hover:bg-red-800" type="submit">Sign up</button>
+            </form>
+
+            <div class="text-sm text-gray-300">
+                <p>Already have an account ? <a href="./signin">Sign in</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-10 bg-zinc-950 text-white text-center py-7 opacity-60">
+        <p>&copy; 2025 Kiraflix. All rights reserved.</p>
+    </footer>
+</body>
+</html>
