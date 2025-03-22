@@ -14,7 +14,7 @@ async function createUser(req, res){
 
                 const token = jwt.sign({username}, "secretKey");
                 res.cookie("token", token);
-                res.redirect("/");
+                res.redirect("/home");
             })
         })
     }
