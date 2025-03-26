@@ -1,5 +1,6 @@
 const express = require("express");
 const {createUser, signin, logout} = require("../controllers/user");
+const {currentUser} = require("../controllers/profile")
 
 const router = express.Router();
 
@@ -32,5 +33,6 @@ router.get("/logout", logout);
 
 router.post('/signup', createUser);
 router.post('/signin', signin);
+router.post('/profile', currentUser);
 
 module.exports = router;

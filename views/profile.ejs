@@ -12,10 +12,10 @@
 
     <section>
         <nav class="bg-zinc-950 p-6 flex justify-around items-center">
-            <a class="text-red-700 font-bold text-4xl" href="/">KIRAFLIX</a>
+            <a class="text-red-700 font-bold text-4xl" href="/home">KIRAFLIX</a>
             
             <ul class="flex space-x-7 text-gray-300 font-medium">
-                <li><a class="hover:text-stone-400" href="#">Home</a></li>
+                <li><a class="hover:text-stone-400" href="/home">Home</a></li>
                 <li><a class="hover:text-stone-400" href="#">Movies</a></li>
                 <li><a class="hover:text-stone-400" href="#">TV Shows</a></li>
                 <li><a class="hover:text-stone-400" href="#">New</a></li>
@@ -31,8 +31,7 @@
                 <button onclick="toggleDropdown()" class="flex items-center space-x-2 text-gray-300 cursor-pointer">
                     <img src="https://img.icons8.com/?size=100&id=H101gtpJBVoh&format=png&color=FFFFFF" class="w-10 h-10 rounded-full" alt="Profile">
                     <span class="font-medium hidden md:inline hover:text-stone-400">My Profile</span>
-                </button>
-                
+                </button>          
                 <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-40 bg-zinc-700 rounded-lg shadow-lg overflow-hidden">
                     <a href="/profile" class="block px-4 py-2 bg-zinc-700 text-white hover:bg-blue-500">View Profile</a>
                     <a href="/logout" class="block px-4 py-2 bg-zinc-700 text-white hover:bg-red-500">Logout</a>
@@ -40,6 +39,10 @@
             </div>
         </nav>
     </section>
+
+    <div class="text-6xl text-white font-bold mt-20 ml-28">
+         <h1>Hi, </h1>
+    </div>
 
 
     <script>
